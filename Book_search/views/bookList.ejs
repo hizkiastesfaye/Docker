@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book List</title>
+</head>
+<body>
+    <h1>Available Books</h1>
+    <ul>
+        <% booklist.forEach(book => { %>
+            <li>
+                <strong>Title:</strong> <%= book.title %> <br>
+                <strong>Author:</strong> <%= book.author %> <br>
+                <strong>Published Date:</strong> <%= book.publishedDate %> <br>
+                <strong>Category:</strong> <%= book.category %>
+            </li>
+        <% }); %>
+    </ul>
+    <a href="/">Go Home</a>
+</body>
+</html>
